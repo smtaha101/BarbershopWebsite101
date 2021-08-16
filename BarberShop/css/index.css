@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../Images/bg1.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.banner .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 184, 135, 0.22);
+}
+.banner header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;   
+    background-color: rgba(17, 17, 17, 0.6);
+}
+.banner header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner header ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    transition: 0.3s;
+    
+}
+.banner header ul li a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    font-family: 'Italianno', cursive;
+    font-weight: 500;
+}
+.banner header ul li:hover
+{
+    background-color: burlywood;
+    cursor: pointer;
+    color: #000;
+}
+.banner header ul li:hover a
+{
+    color: #000;
+}
+.banner .content
+{
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner .content i
+{
+    font-size: 10em;
+    color: burlywood;
+}
+.banner .content h3
+{
+    position: relative;
+    color: burlywood;
+    font-family: 'Italianno', cursive;
+    font-weight: 200;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+.banner .content h3::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    background-color: #111; 
+}
+.about .box1
+{
+    display: flex;
+    width: 100%;
+}
+.about .box1 .imgBx
+{
+    width: 40%;
+    height: 500px;
+}
+.about .box1 .imgBx img
+{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    object-fit: cover;
+}
+.about .box1 .contentBx
+{
+    width: 55%;
+    padding: 40px;
+}
+.about .box1 .contentBx h2
+{
+    position: relative;
+    display: inline-block;
+    color: burlywood;
+    font-family: 'Italianno', cursive;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.about .box1 .contentBx h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.about .box1 .contentBx p
+{
+    color: #fff;
+    font-weight: 200;
+    line-height: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .box2
+{
+    display: flex;
+    width: 100%;
+}
+.about .box2 .contentBx
+{
+    width: 60%;
+    padding: 40px;
+}
+.about .box2 .contentBx h2
+{
+    position: relative;
+    display: inline-block;
+    color: burlywood;
+    font-family: 'Italianno', cursive;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.about .box2 .contentBx h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.about .box2 .contentBx p
+{
+    color: #fff;
+    font-weight: 200;
+    line-height: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+.about .box2 .imgBx
+{
+    width: 40%;
+    height: 500px;
+}
+.about .box2 .imgBx img
+{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+    object-fit: cover;
+}
+
+.services
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+.services .serviceTitle
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.services .serviceTitle h2
+{
+    position: relative;
+    color: burlywood;
+    font-family: 'Italianno', cursive;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.services .serviceTitle h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.services .serviceTitle p
+{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 4em;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.services .ourServices
+{
+    width: 100%;
+    padding: 0px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.services .ourServices .box1
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url("../images/hairstyle.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.services .ourServices .box1:hover
+{
+    filter: grayscale(0);
+}
+.services .ourServices .box1 .overlay
+{
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(222, 184, 135, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+}
+.services .ourServices .box1:hover .overlay
+{
+    bottom: 0;
+    opacity: 1;
+}
+.services .ourServices .box1 .overlay h3
+{
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.services .ourServices .box2
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url("../images/beardtrimming.jpg");
+    background-size: cover;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.services .ourServices .box2:hover
+{
+    filter: grayscale(0);
+}
+.services .ourServices .box2 .overlay
+{
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(222, 184, 135, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+}
+.services .ourServices .box2:hover .overlay
+{
+    bottom: 0;
+    opacity: 1;
+}
+.services .ourServices .box2 .overlay h3
+{
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.services .ourServices .box3
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url("../images/faceMask.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.services .ourServices .box3:hover
+{
+    filter: grayscale(0);
+}
+.services .ourServices .box3 .overlay
+{
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(222, 184, 135, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+}
+.services .ourServices .box3:hover .overlay
+{
+    bottom: 0;
+    opacity: 1;
+}
+.services .ourServices .box3 .overlay h3
+{
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.services .ourServices .box4
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url("../images/menmassage.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.services .ourServices .box4:hover
+{
+    filter: grayscale(0);
+}
+.services .ourServices .box4 .overlay
+{
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(222, 184, 135, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+}
+.services .ourServices .box4:hover .overlay
+{
+    bottom: 0;
+    opacity: 1;
+}
+.services .ourServices .box4 .overlay h3
+{
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.testimonial
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+}
+.testimonial .testimonialTitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.testimonial .testimonialTitle h2
+{
+    position: relative;
+    color: burlywood;
+    font-size: 3em;
+    font-family: 'Italianno', cursive;
+    font-weight: 200;
+}
+.testimonial .testimonialTitle h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.testimonial .testimonialTitle p
+{
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-family: 1.2em;
+    line-height: 3em;
+}
+.testimonial .content
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.testimonial .content .box1
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #555;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+.testimonial .content .box1:hover
+{
+    transform: scale(1.03);
+}
+.testimonial .content .box1 .imgBx
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/testi1.jpg");
+    background-size: cover;
+}
+.testimonial .content .box1 .feedback
+{
+    width: 100%;
+    padding: 10px;
+}
+.testimonial .content .box1 .feedback p
+{
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Poppins',sans-serif;
+}
+.testimonial .content .box1 .clientName
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.testimonial .content .box1 .clientName h2
+{
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+.testimonial .content .box2
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #555;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+.testimonial .content .box2:hover
+{
+    transform: scale(1.03);
+}
+.testimonial .content .box2 .imgBx
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/testi2.jpg");
+    background-size: cover;
+}
+.testimonial .content .box2 .feedback
+{
+    width: 100%;
+    padding: 10px;
+}
+.testimonial .content .box2 .feedback p
+{
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Poppins',sans-serif;
+}
+.testimonial .content .box2 .clientName
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.testimonial .content .box2 .clientName h2
+{
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+.testimonial .content .box3
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #555;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+.testimonial .content .box3:hover
+{
+    transform: scale(1.03);
+}
+.testimonial .content .box3 .imgBx
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/testi3.jpg");
+    background-size: cover;
+}
+.testimonial .content .box3 .feedback
+{
+    width: 100%;
+    padding: 10px;
+}
+.testimonial .content .box3 .feedback p
+{
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Poppins',sans-serif;
+}
+.testimonial .content .box3 .clientName
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.testimonial .content .box3 .clientName h2
+{
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+.contactus
+{
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.contactus .contactTitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.contactus .contactTitle h2
+{
+    position: relative;
+    color: burlywood;
+    font-family: 'Italianno', cursive;
+    font-weight: 200;
+    font-size: 3em;
+}
+.contactus .contactTitle h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    clip-path: polygon(49% 96%, 0% 100%, 100% 100%);
+}
+.contactus .contactTitle p
+{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 3em;
+}
+.contactus .contactForm
+{
+    width: 50%;
+    box-shadow: 0 0 10px #555;
+    display: flex;
+    border-radius: 20px;
+
+}
+.contactus .contactForm .imgBx
+{
+    width: 50%;
+    background: url("../images/contactUs.jpg");
+    background-size: cover;
+}
+.contactus .contactForm .myform
+{
+    width: 50%;
+    padding: 40px;
+}
+.contactus .contactForm .myform h3
+{
+    color: burlywood;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2em;
+}
+.contactus .contactForm .myform input
+{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}
+.contactus .contactForm .myform textarea
+{
+    width: 100%;
+    height: 200px;
+    background-color: #111;
+    resize: none;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.contactus .contactForm .myform .btnsend
+{
+    width: 100%;
+    text-align: center;
+    background-color: burlywood;
+    margin-top: 20px;
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    border: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.contactus .contactForm .myform .btnsend:hover
+{
+    background-color: rgb(158, 126, 85);
+}
+.copyright
+{
+    width: 100%;
+    padding: 20px;
+    background-color: #111;
+}
+.copyright h2
+{
+    
+    color: burlywood;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
